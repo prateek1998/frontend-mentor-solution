@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 18px;
+}
+body{
+    font-family: 'Kumbh Sans','sans-serif';
+    background-color: hsl(185, 75%, 39%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+    background: url(images/bg-pattern-bottom.svg) no-repeat 175% -100%, url(images/bg-pattern-top.svg) no-repeat -75% 175%, hsl(185, 75%, 39%);
+    
+}
+
+.card{
+    width: 350px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+.card-header{
+    background-image: url(./images/bg-pattern-card.svg);
+    background-size: cover;
+    height: 150px;
+}
+.img-block{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: -50px auto 20px;
+    border:5px solid white;
+    overflow: hidden;
+}
+.img-block > img{
+    height: auto;
+    width: 100%;
+    display: block;
+}
+.card-body{
+    padding: 0 20px 30px;
+}
+.name-age{
+    font-size: 1.2rem;    
+    margin-bottom: 10px;
+}
+.age, .city, .meta{
+    font-weight: 400;
+    font-size: 1rem;    
+    color:hsl(0, 0%, 59%);
+    opacity: 0.9;
+}
+
+.card-footer{
+    border-top: 1px solid grey;
+    display: flex;    
+    padding: 0 20px;
+}
+.card-footer .item{
+    flex: 1;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-footer .item .value{
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+.card-footer .item .meta{
+    font-size: 0.7;
+    letter-spacing: 1px;    
+}
+
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    transform: translateY(100%);
+    transition: .4s;
+    padding: 10px;
+    background: white;
+  }
+
+.attribution:hover{
+    transform: translateY(0);
+}
+.attribution::before{
+    content: '';
+    background: rgb(207, 206, 206, 5%);
+    height: 50px;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+}
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
